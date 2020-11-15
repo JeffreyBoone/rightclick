@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import ContextMenu from './Rightclick';
 import reportWebVitals from './reportWebVitals';
+import {list1} from "./props.js"
+import {list2} from "./props.js"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ContextMenu list={list1} />
   </React.StrictMode>,
   document.getElementById('root')
 );
