@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ContextMenu from './Rightclick';
+import Rightclick from './Rightclick';
+import Longpress from './Longpress';
 import reportWebVitals from './reportWebVitals';
 import {list1} from "./props.js"
 import {list2} from "./props.js"
 
 ReactDOM.render(
   <React.StrictMode>
-    <ContextMenu list={list1} />
+    <Longpress />
+    <Rightclick list={list1} />
   </React.StrictMode>,
   document.getElementById('root')
 );

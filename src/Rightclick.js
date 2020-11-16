@@ -63,6 +63,8 @@ export default class Rightclick extends React.Component {
       if (wasOutside && visible) this.setState({ visible: false, });
   };
 
+  
+
   _handleScroll = () => {
       const { visible } = this.state;
       
@@ -80,3 +82,4 @@ export default class Rightclick extends React.Component {
           </div>
   };
 }
+
