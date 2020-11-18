@@ -11,6 +11,9 @@ export default function Longpress() {
   const onLongPress = () => {
     console.log('longpress is triggered');
     setlongPressCount(longPressCount + 1)
+    if (longPressCount === 1) {
+      setlongPressCount(0)
+    }
   };
 
   const onClick = () => {
